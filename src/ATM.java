@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class ATM {
     public static void main(String[] args) {
-        double balance = 2000.00; // initial balance
+        double balance = 3000.00; // initial balance
         int pin = 5678;           // example PIN
         Scanner sc = new Scanner(System.in);
 
