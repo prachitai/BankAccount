@@ -2,14 +2,14 @@ import java.util.Scanner;
 public class ATM {
     public static void main(String[] args) {
         double balance = 2000.00; // initial balance
-        int pin = 2345;           // example PIN
+        int pin = 5678;           // example PIN
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter your PIN: ");
         int enteredPin = sc.nextInt();
 
         if (enteredPin == pin) {
-            System.out.println("\n✅ Login Successful!");
+            System.out.println("\nLogin Successful!");
 
             while (true) {
                 System.out.println("\n----- ATM MENU -----");
@@ -22,14 +22,14 @@ public class ATM {
 
                 switch (choice) {
                     case 1:
-                        System.out.println("💰 Current Balance: ₹" + balance);
+                        System.out.println("Current Balance: ₹" + balance);
                         break;
 
                     case 2:
                         System.out.print("Enter amount to deposit: ₹");
                         double deposit = sc.nextDouble();
                         balance += deposit;
-                        System.out.println("✅ Successfully Deposited! New Balance: ₹" + balance);
+                        System.out.println("Successfully Deposited! New Balance: ₹" + balance);
                         break;
 
                     case 3:
@@ -37,23 +37,23 @@ public class ATM {
                         double withdraw = sc.nextDouble();
                         if (withdraw <= balance) {
                             balance -= withdraw;
-                            System.out.println("💸 Withdrawal Successful! New Balance: ₹" + balance);
+                            System.out.println("Withdrawal Successful! New Balance: ₹" + balance);
                         } else {
-                            System.out.println("❌ Insufficient Balance!");
+                            System.out.println("Insufficient Balance!");
                         }
                         break;
 
                     case 4:
-                        System.out.println("👋 Thank you for using our ATM!");
+                        System.out.println("Thank you for using our ATM!");
                         System.exit(0);
                         break;
 
                     default:
-                        System.out.println("⚠️ Invalid option! Try again.");
+                        System.out.println("Invalid option! Try again.");
                 }
             }
         } else {
-            System.out.println("❌ Incorrect PIN! Access Denied.");
+            System.out.println("Incorrect PIN! Access Denied.");
         }
 
         sc.close();
