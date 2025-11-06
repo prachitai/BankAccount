@@ -5,7 +5,7 @@ public class ATM {
         int pin = 321;           // PIN
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter your PIN: ");
+        System.out.print("Enter your ATM PIN: ");
         int enteredPin = sc.nextInt();
 
         if (enteredPin == pin) {
