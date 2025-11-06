@@ -1,11 +1,11 @@
 import java.util.Scanner;
 public class ATM {
     public static void main(String[] args) {
-        double balance = 3000.00; // balance
+        double balance = 6000; // balance
         int pin = 321;           // PIN
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter your ATM PIN: ");
+        System.out.print("Enter your PIN: ");
         int enteredPin = sc.nextInt();
 
         if (enteredPin == pin) {
